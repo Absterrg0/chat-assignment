@@ -112,7 +112,7 @@ export default function ChatRoom() {
     setIsConnecting(true)
 
     const connectWebSocket = () => {
-      const ws = new WebSocket("ws://localhost:8080")
+      const ws = new WebSocket("https://socket-dcn-assignment.onrender.com/")
 
       ws.onopen = () => {
         console.log("Connected to WebSocket")
